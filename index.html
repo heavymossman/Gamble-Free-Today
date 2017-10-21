@@ -5,41 +5,151 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Gamble Free.today</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <style type="text/css">
+      .nav-link {
+      margin-right: 7px;
+      margin-left: 7px;
+      }
+      .bg-faded {
+      background-color: #ffffff;
+      }
+      .jumbotron {
+      background-color: #023b6b;
+      color: white;
+      }
+      @media (min-width: 576px){
+      .jumbotron {
+      padding: 7rem 2rem;
+      }
+      }
+      @media (max-width: 650px){
+      .display-3 {
+      font-size: 2.5rem;
+      font-weight: 300;
+      line-height: 1.1;
+      }
+      }
+      .btn-group-lg, .btn, .btn-lg {
+      border-radius: 0;
+      cursor: pointer;
+      }
+      .bg-red {
+      background-color: #dc3545;
+      }
+      .dropdown-toggle::after {
+          display: none;
+      }
+
+    </style>
+    <script type="text/javascript">
+      $(function(){
+          $(".dropdown").on("show.bs.dropdown hide.bs.dropdown", function(){
+            $(this).find(".caret").toggleClass("caretup");
+          });
+        });
+    </script>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="#"><img src="logo.png" class="img-fluid"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#">Gamble Free.today</a>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-fighter-jet" aria-hidden="true"></i> Instant win
+                <small><i class="fa fa-dot-circle-o" aria-hidden="true"></i></small>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#"><i class="fa fa-trophy" aria-hidden="true"></i> Lottery</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
+                <a class="nav-link" href="#"><i class="fa fa-connectdevelop" aria-hidden="true"></i> Chips</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-info-circle" aria-hidden="true"></i> How it works
+                <small><i class="fa fa-dot-circle-o" aria-hidden="true"></i></small>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
               </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-hand-o-up" aria-hidden="true"></i> Register</a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
     </header>
-    <h1>Hello, world!</h1>
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <section>
+      <div class="jumbotron jumbotron-fluid m-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <h1 class="display-3">WIN £1000 TODAY!</h1>
+              <p class="lead">The worlds first and only 100% FREE Gambling Website. Simply complete a few marketing challenges and earn loads of our GambleChips, gamble these, but only win REAL CASH PRIZES!</p>
+              <button class="btn btn-danger btn-lg"><i class="fa fa-money" aria-hidden="true"></i> WIN £100 INSTANTLY</button> <button class="btn btn-info btn-lg"><i class="fa fa-money" aria-hidden="true"></i> WIN £1000 TODAY</button>
+            </div>
+            <div class="col-md-5">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/khOaAHK7efc?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid bg-red p-4">
+        <div class="container">
+          <div class="row pt-2">
+            <div class="col-md-3">
+              <label for="firstName" class="sr-only">First name</label>
+              <input type="text" class="form-control form-control-lg" id="firstName" placeholder="First name">
+            </div>
+            <div class="col-md-3">
+              <label for="inputEmail" class="sr-only">Email your valid email</label>
+              <input type="email" class="form-control form-control-lg" id="inputEmail" placeholder="Enter your valid email">
+            </div>
+            <div class="col-md-3">
+              <div class="form-group mx-sm-3">
+                <label for="inputPassword2" class="sr-only">Choose a password</label>
+                <input type="password" class="form-control form-control-lg" id="inputPassword2" placeholder="Password">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <button type="submit" class="btn btn-warning btn-block btn-lg"><i class="fa fa-connectdevelop" aria-hidden="true"></i> Claim 100 FREE Chips</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   </body>
 </html>
